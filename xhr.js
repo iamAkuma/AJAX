@@ -16,6 +16,8 @@ function loadText(){
         xhr.onload = function(){ 
         if(this.status == 200){
             console.log(this.responseText)
+        }else if(this.status == 404){
+            document.getElementById( 'text').innerHTML = 'Not Found';
         }
     }
     xhr.onerror =function(){
@@ -27,6 +29,7 @@ function loadText(){
 
         if(this.readyState == 4 && this.status ==200){
             //console.log(this.responseText)
+            document.getElementById('text').innerHTML = this.responseText;
         }
     }
     //Sends Request

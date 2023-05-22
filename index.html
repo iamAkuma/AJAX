@@ -15,35 +15,6 @@
 <body>
     <h1 align="center">AJAX</h1>
     <button id="button">Get Text File</button>
-    <script>
-        //Create an Event Listener
-        document.getElementById('button').addEventListener('click', loadText);
-
-        //Create function
-        function loadText(){
-            //Create XHR Object
-            var xhr = new XMLHttpRequest();
-            //OPEN - tupe, url/filename, async
-            xhr.open('GET', 'sample.txt', true)
-
-            //xhr.onload = function(){ 
-              //  if(this.status == 200){
-                //    console.log(this.responseText)
-               // }
-            //}
-
-            xhr.onreadystatechange = function(){
-                if(){
-                    
-                }
-            }
-            //Sends Request
-            xhr.send();
-        }
-        //HTTP STATUSES
-                    //200 = OK
-                    //403 = Forbidden
-                    //404 = Not FOund
-    </script>
-</body>
-</html>
+    <script src="xhr.js"></script>
+    </body>
+    </html>
